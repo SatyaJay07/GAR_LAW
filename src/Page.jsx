@@ -11,8 +11,8 @@ const Page = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       {/* Header */}
-      <header className="bg-gray-800 py-4 flex justify-between items-center px-8">
-        <p className="text-white font-bold text-3xl">Advocate</p>
+      <header className="bg-gray-800 py-4 flex flex-col sm:flex-row justify-between items-center px-8">
+        <p className="text-white font-bold text-3xl mb-4 sm:mb-0">Advocate</p>
         <div className="flex space-x-4">
           <button className="hover:bg-blue-500 hover:text-white hover:rounded-full transition duration-300 ease-in-out px-4 py-2 border border-blue-500"
           onClick={() => showToast("Dial/Whatsapp @ 9440766984")}>
@@ -22,7 +22,7 @@ const Page = () => {
       </header>
 
       {/* Content */}
-      <main className="flex-1 container mx-auto my-4">
+      <main className="flex-1 container mx-auto my-4 px-4 sm:px-0">
         {/* Centered content */}
         <div className="flex flex-col items-center justify-center">
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
@@ -31,11 +31,11 @@ const Page = () => {
                 Anuradha Guruzala
                 <span className='text-sm italic ml-0.5'> B.A, L.L.B</span>
             </p>
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
               <img 
                 src={img1}
                 alt="Profile"
-                className="w-40 h-40 rounded-full object-cover bg-gray-200"
+                className="w-40 h-40 rounded-full object-cover bg-gray-200 mb-4 sm:mb-0"
               />
               
               <div className="flex space-x-4 ml-4">
@@ -72,7 +72,7 @@ const Page = () => {
 
       {/* Footer */}
       <footer className="flex justify-center items-center bg-gray-800 text-white py-4">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center px-4 sm:px-0">
         <span className='font-semibold'> Locations: </span> High Court of Andhra Pradesh, Guntur district Courts
         </div>
       </footer>
